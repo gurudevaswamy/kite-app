@@ -8,7 +8,7 @@ count = st_autorefresh(interval=5*1000, limit=None, key="datarefresh")
 
 # 🔐 Credentials — replace with your real ones
 API_KEY = "5sglhryo8fynoqi7"
-ACCESS_TOKEN = "6Ghr65wXC1brJaZYgt1yJwCsY5LcjKcz"
+ACCESS_TOKEN = "mdYTxQWsMsyYP7D0zKU6afaPgPZY3Ybn"
 
 st.set_page_config(page_title="Zerodha Positions", layout="wide")
 st.title("📊 Zerodha Open Positions")
@@ -72,3 +72,4 @@ if rows:
     st.dataframe(df.style.applymap(color_pnl, subset=["P&L"]))
 else:
     st.info("No open positions")
+
